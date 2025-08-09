@@ -2,20 +2,24 @@ from concurrent import futures  # Импорт пула потоков для а
 
 import grpc  # Импорт библиотеки gRPC
 
-import user_service_pb2  # Сгенерированные классы для работы с gRPC-сообщениями
-import user_service_pb2_grpc  # Сгенерированный класс для работы с сервисом
+import course_service_pb2  # Сгенерированные классы для работы с gRPC-сообщениями
+import course_service_pb2_grpc  # Сгенерированный класс для работы с сервисом
 
 
 # Реализация gRPC-сервиса
-class UserServiceServicer(user_service_pb2_grpc.UserServiceServicer):
-    """Реализация методов gRPC-сервиса UserService"""
+class CourseServiceServicer(course_service_pb2_grpc.CourseServiceServicer):
+    """Реализация методов gRPC-сервиса CourseService"""
 
-    def GetUser(self, request, context):
+    def GetCourse(self, request, context):
         """Метод GetUser обрабатывает входящий запрос"""
-        print(f'Получен запрос к методу GetUser от пользователя: {request.username}')
+        print(f'Получен запрос к методу GetCourse от пользователя: {request.course_id}')
 
         # Формируем и возвращаем ответное сообщение
-        return user_service_pb2.GetUserResponse(message=f"Привет, {request.username}!")
+        return course_service_pb2.GetCourseResponse(
+            course_id=request.course_id,
+            title="Автотесты API",
+            description="Будем изучать написание API автотестов",
+        )
 
 
 # Функция для запуска gRPC-сервера
@@ -25,8 +29,8 @@ def serve():
     # Создаем сервер с использованием пула потоков (до 10 потоков)
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
 
-    # Регистрируем сервис UserService на сервере
-    user_service_pb2_grpc.add_UserServiceServicer_to_server(UserServiceServicer(), server)
+    # Регистрируем сервис CourseService на сервере
+    course_service_pb2_grpc.add_CourseServiceServicer_to_server(CourseServiceServicer(), server)
 
     # Настраиваем сервер для прослушивания порта 50051
     server.add_insecure_port('[::]:50051')
