@@ -1,20 +1,20 @@
-from clients.api_client import APIClient
+from typing import TypedDict
 
 from httpx import Response
 
-from typing import TypedDict
+from clients.api_client import APIClient
 
 
 class GetExercisesQueryDict(TypedDict):
     """
-    Описание структуры запроса на получение списка упражнений.
+    Описание структуры запроса на получение списка заданий.
     """
     courseId: str
 
 
-class CreateExerciseQueryRequest(TypedDict):
+class CreateExerciseRequestDict(TypedDict):
     """
-    Описание структуры запроса на создание упражнения.
+    Описание структуры запроса на создание задания.
     """
     title: str
     courseId: str
@@ -25,9 +25,9 @@ class CreateExerciseQueryRequest(TypedDict):
     estimatedTime: str
 
 
-class UpdateExerciseQueryRequest(TypedDict):
+class UpdateExerciseRequestDict(TypedDict):
     """
-    Описание структуры запроса на обновление упражнения.
+    Описание структуры запроса на обновление задания.
     """
     title: str | None
     maxScore: int | None
@@ -44,43 +44,46 @@ class ExercisesClient(APIClient):
 
     def get_exercises_api(self, query: GetExercisesQueryDict) -> Response:
         """
-        Метод для получения списка упражнений для определенного курса
+        Метод получения списка заданий.
+
         :param query: Словарь с courseId.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.get('/api/v1/exercises', params=query)
+        return self.get("/api/v1/exercises", params=query)
 
     def get_exercise_api(self, exercise_id: str) -> Response:
         """
-        Метод для получения информации о задании по идентификатору задания
-        :param exercise_id: Идентификатор задания
-        :return: Ответ от сервера в виде объекта httpx.Response
-        """
-        return self.get(f'/api/v1/exercises/{exercise_id}')
+        Метод получения задания.
 
-    def create_exercise_api(self, request: CreateExerciseQueryRequest) -> Response:
-        """
-        Метод для создания задания
-        :param request: Словарь с  title, courseId, maxScore, minScore, orderIndex,
-                        description, estimatedTime
+        :param exercise_id: Идентификатор задания.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.post('/api/v1/exercises', json=request)
+        return self.get(f"/api/v1/exercises/{exercise_id}")
 
-    def update_exercise_api(self, exercise_id: str, request: UpdateExerciseQueryRequest) -> Response:
+    def create_exercise_api(self, request: CreateExerciseRequestDict) -> Response:
         """
-        Метод для обновления данных задания
-        :param exercise_id: Идентификатор задания
-        :param request:  Словарь с title, maxScore, minScore, orderIndex, description,
-                         estimatedTime
+        Метод создания задания.
+
+        :param request: Словарь с title, courseId, maxScore, minScore, orderIndex, description, estimatedTime.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.patch(f'/api/v1/exercises/{exercise_id}', json=request)
+        return self.post("/api/v1/exercises", json=request)
+
+    def update_exercise_api(self, exercise_id: str, request: UpdateExerciseRequestDict) -> Response:
+        """
+        Метод обновления задания.
+
+        :param exercise_id: Идентификатор задания.
+        :param request: Словарь с title, maxScore, minScore, orderIndex, description, estimatedTime.
+        :return: Ответ от сервера в виде объекта httpx.Response
+        """
+        return self.patch(f"/api/v1/exercises/{exercise_id}", json=request)
 
     def delete_exercise_api(self, exercise_id: str) -> Response:
         """
-        Метод для удаления задания
-        :param exercise_id: Идентификатор задания
+        Метод удаления задания.
+
+        :param exercise_id: Идентификатор задания.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.delete(f'/api/v1/exercises/{exercise_id}')
+        return self.delete(f"/api/v1/exercises/{exercise_id}")
