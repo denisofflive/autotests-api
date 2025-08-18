@@ -1,48 +1,49 @@
 from pydantic import BaseModel, Field, ConfigDict
+
 from clients.files.files_schema import FileSchema
 from clients.users.users_schema import UserSchema
-from pydantic.alias_generators import to_camel
 
 
-# Добавили описание структуры курса
 class CourseSchema(BaseModel):
     """
     Описание структуры курса.
     """
-    model_config = ConfigDict(populate_by_name=True, alias_generator=to_camel)
+    model_config = ConfigDict(populate_by_name=True)
+
     id: str
     title: str
-    max_score: int
-    min_score: int
+    max_score: int = Field(alias="maxScore")
+    min_score: int = Field(alias="minScore")
     description: str
-    preview_file: FileSchema  # Вложенная структура файла
-    estimated_time: str
-    created_by_user: UserSchema  # Вложенная структура пользователяженная структура пользователя
+    preview_file: FileSchema = Field(alias="previewFile")
+    estimated_time: str = Field(alias="estimatedTime")
+    created_by_user: UserSchema = Field(alias="createdByUser")
 
 
 class GetCoursesQuerySchema(BaseModel):
     """
     Описание структуры запроса на получение списка курсов.
     """
-    model_config = ConfigDict(populate_by_name=True, alias_generator=to_camel)
-    user_id: str
+    model_config = ConfigDict(populate_by_name=True)
+
+    user_id: str = Field(alias="userId")
 
 
 class CreateCourseRequestSchema(BaseModel):
     """
     Описание структуры запроса на создание курса.
     """
-    model_config = ConfigDict(populate_by_name=True, alias_generator=to_camel)
+    model_config = ConfigDict(populate_by_name=True)
+
     title: str
-    max_score: int
-    min_score: int
+    max_score: int = Field(alias="maxScore")
+    min_score: int = Field(alias="minScore")
     description: str
-    estimated_time: str
-    preview_file_id: str
-    created_by_user_id: str
+    estimated_time: str = Field(alias="estimatedTime")
+    preview_file_id: str = Field(alias="previewFileId")
+    created_by_user_id: str = Field(alias="createdByUserId")
 
 
-# Добавили описание структуры запроса на создание курса
 class CreateCourseResponseSchema(BaseModel):
     """
     Описание структуры ответа создания курса.
@@ -54,9 +55,10 @@ class UpdateCourseRequestSchema(BaseModel):
     """
     Описание структуры запроса на обновление курса.
     """
-    model_config = ConfigDict(populate_by_name=True, alias_generator=to_camel)
-    title: str | None = None
-    max_score: int | None = None
-    min_score: int | None = None
-    description: str | None = None
-    estimated_time: str | None = None
+    model_config = ConfigDict(populate_by_name=True)
+
+    title: str | None
+    max_score: int | None = Field(alias="maxScore")
+    min_score: int | None = Field(alias="minScore")
+    description: str | None
+    estimated_time: str | None = Field(alias="estimatedTime")
