@@ -28,13 +28,13 @@ class Fake:
         """
         return self.faker.uuid4()
 
-    def email(self) -> str:
+    def email(self, domain: str | None = None) -> str:
         """
         Генерирует случайный email.
 
         :return: Случайный email.
         """
-        return self.faker.email()
+        return self.faker.email(domain=domain)
 
     def sentence(self) -> str:
         """
@@ -113,3 +113,6 @@ class Fake:
 
 # Создаем экземпляр класса Fake с использованием Faker
 fake = Fake(faker=Faker())
+print(fake.email(domain='myemail.com'))
+print(fake.email(domain='my_example.com'))
+print(fake.email())
