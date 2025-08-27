@@ -13,8 +13,7 @@ from tools.assertions.users import assert_create_user_response, assert_get_user_
 
 @pytest.mark.users
 @pytest.mark.regression
-def test_create_user(public_users_client: PublicUsersClient):  # Используем фикстуру API клиента
-    # Удалили инициализацию API клиента из теста
+def test_create_user(public_users_client: PublicUsersClient):
     request = CreateUserRequestSchema()
     response = public_users_client.create_user_api(request)
     response_data = CreateUserResponseSchema.model_validate_json(response.text)
@@ -22,14 +21,16 @@ def test_create_user(public_users_client: PublicUsersClient):  # Использ�
     assert_status_code(response.status_code, HTTPStatus.OK)
     assert_create_user_response(request, response_data)
 
-    @pytest.mark.users
-    @pytest.mark.regression
-    def test_get_user_me(private_users_client: PrivateUsersClient, function_user: UserFixture):
-        response = private_users_client.get_user_me_api()
-        response_data = GetUserResponseSchema.model_validate_json(response.text)
+    validate_json_schema(response.json(), response_data.model_json_schema())
 
-        assert_status_code(response.status_code, HTTPStatus.OK)
 
-        assert_get_user_response(response_data.user, function_user.response.user)
-        validate_json_schema(response.json(), response_data.model_json_schema())
+@pytest.mark.users
+@pytest.mark.regression
+def test_get_user_me(function_user: UserFixture, private_users_client: PrivateUsersClient):
+    response = private_users_client.get_user_me_api()
+    response_data = GetUserResponseSchema.model_validate_json(response.text)
 
+    assert_status_code(response.status_code, HTTPStatus.OK)
+    assert_get_user_response(response_data, function_user.response)
+
+    validate_json_schema(response.json(), response_data.model_json_schema())
