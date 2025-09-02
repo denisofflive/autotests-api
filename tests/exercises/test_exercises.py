@@ -15,13 +15,12 @@ from tools.assertions.schema import validate_json_schema
 @pytest.mark.exercises
 @pytest.mark.regression
 class TestExercises:
-
     def test_create_exercise(
             self,
-            exercises_client: ExercisesClient,
-            function_course: CourseFixture
+            function_course: CourseFixture,
+            exercises_client: ExercisesClient
     ):
-        request = CreateExerciseRequestSchema(courseId=function_course.response.course.id)
+        request = CreateExerciseRequestSchema(course_id=function_course.response.course.id)
         response = exercises_client.create_exercise_api(request)
         response_data = CreateExerciseResponseSchema.model_validate_json(response.text)
 
