@@ -84,3 +84,12 @@ class UpdateCourseResponseSchema(BaseModel):
     Описание структуры ответа обновления курса.
     """
     course: CourseSchema
+# Остальной код без изменений
+
+class GetCoursesResponseSchema(BaseModel):
+    """
+    Описание структуры ответа на получение списка курсов.
+    """
+    courses: list[CourseSchema]
+
+# Остальной код без изменений
