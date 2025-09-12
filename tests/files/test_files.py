@@ -47,6 +47,7 @@ class TestFiles:
 @pytest.mark.files
 @pytest.mark.regression
 class TestFiles:
+    @pytest.mark.xdist_group(name="files-group")  # Добавили xdist группу
     @allure.tag(AllureTag.GET_ENTITY)
     @allure.story(AllureStory.GET_ENTITY)
     @allure.title("Get file")
@@ -65,6 +66,7 @@ class TestFiles:
 @pytest.mark.files
 @pytest.mark.regression
 class TestFiles:
+    @pytest.mark.xdist_group(name="files-group")  # Добавили xdist группу
     @allure.tag(AllureTag.DELETE_ENTITY)
     @allure.story(AllureStory.DELETE_ENTITY)
     @allure.title("Delete file")
