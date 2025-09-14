@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE3OjEzOjE0LjI0NDQzNyIsInVzZXJfaWQiOiI3MzBmZWYxNC03MTEyLTQ3MTktOWUyMC03NDFhMTM3MDkzMWMifQ.YBbMIP7fehDuKrJ7t34gYV7afLb3jZlsb8nusngEI0k' \
+  -H 'content-length: 392' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Product management we put.","maxScore":86,"minScore":9,"description":"Though but ask wait west space subject. Mission single true. Movie increase against change behavior.\nAlong effect purpose difference civil leave then. Any choice campaign.","estimatedTime":"4 weeks","previewFileId":"0754111b-7e6a-413f-a293-a8bcaeb08117","createdByUserId":"730fef14-7112-4719-9e20-741a1370931c"}'

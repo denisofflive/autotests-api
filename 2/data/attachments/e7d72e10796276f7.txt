@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE3OjEzOjE0LjgyNzU1MyIsInVzZXJfaWQiOiI5ZGEzZDJlNi02ZGJkLTRkYmQtYjE3Zi1mNDlkY2I5YTMxNzQifQ.volVFBa8PfA_9IqWX3SUVWeoovpLkFf9qky7L1mVXgI' \
+  -H 'content-length: 330' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Bag image avoid response along.","courseId":"e99725b7-6d8a-434f-9b05-51640e82f3e8","maxScore":94,"minScore":11,"orderIndex":50,"description":"Style campaign statement. Center produce career idea three well class. On defense else south.\nGeneration thousand remember run social staff consumer.","estimatedTime":"9 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE3OjEzOjE3LjMwMjI1OCIsInVzZXJfaWQiOiI1NTY0MmI2ZC0wMDFhLTQwZjUtYWMwNC0zZTkzODhiYjNhZWQifQ.uKp7GJvRImEtf32du0ZyJLULWiY5Bwhow_ygB0h1P7k' \
+  -H 'content-length: 316' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Choose speech we successful.","maxScore":89,"minScore":1,"description":"Skill ability reality less. Change view such group try. Leg boy social more mother understand.","estimatedTime":"5 weeks","previewFileId":"9decef8b-98ef-4896-88cf-ba38b117e9b6","createdByUserId":"55642b6d-001a-40f5-ac04-3e9388bb3aed"}'

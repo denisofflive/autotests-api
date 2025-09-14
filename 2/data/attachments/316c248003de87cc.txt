@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE3OjEzOjE1LjQ3NzYyMCIsInVzZXJfaWQiOiJkMGI0YjI3NC00ZTZlLTQxN2EtYjU1Ny0yOGM2ZWY1NDZjNDUifQ.NuhlFCrZU90RoaWm8LM8RNMg7xqw0SlfeGiFTvu1x6Y' \
+  -H 'content-length: 344' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Society thus break always network population case.","maxScore":92,"minScore":3,"description":"To another glass. Figure reveal election factor low. Could also service science left method product.","estimatedTime":"6 weeks","previewFileId":"b740323e-2579-4f81-8205-1f317e9b36db","createdByUserId":"d0b4b274-4e6e-417a-b557-28c6ef546c45"}'

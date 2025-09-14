@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE3OjEzOjEyLjc1MjM5MiIsInVzZXJfaWQiOiI0Y2RjNmRmYi0wODhiLTQ2OGQtYWU1ZS0yYzViMTE4MGVhMzcifQ.Jh1YtujdVbrdPs5b9nLbQ5VkeDOzq9zr-9M7detAGzM' \
+  -H 'content-length: 423' \
+  -H 'content-type: application/json' \
+  -d '{"title":"If with military seek either son issue.","maxScore":72,"minScore":16,"description":"Movie know can meeting. But note live. It operation song party work religious hundred.\nPublic culture ready out theory focus. Safe scene kind garden police remember spring. Nice mouth if.","estimatedTime":"10 weeks","previewFileId":"1ae9cbf0-8e89-4f9b-864c-5ce9006a7f55","createdByUserId":"4cdc6dfb-088b-468d-ae5e-2c5b1180ea37"}'

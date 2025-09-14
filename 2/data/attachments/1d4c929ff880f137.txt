@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE3OjEzOjE2LjcxOTA2MCIsInVzZXJfaWQiOiI5NzkwNWVmYi02OTE1LTQ4ZjgtYjM5Yi0xMmIxNmZiZmFmZGEifQ.NBWKiSzOz5dMFy7gLjVB5NhpC6o6VTLt-OTFDx5FysM' \
+  -H 'content-length: 425' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Seem those second seem case thousand place.","maxScore":60,"minScore":22,"description":"Door image along run both understand too. Marriage scientist heavy after computer education southern.\nThere according small modern main. Bring dream role outside since bad employee fear.","estimatedTime":"8 weeks","previewFileId":"bb449d43-690b-4b53-8350-07fe1620e69b","createdByUserId":"97905efb-6915-48f8-b39b-12b16fbfafda"}'
