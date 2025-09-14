@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE2OjQ1OjA2LjA2NjMwNCIsInVzZXJfaWQiOiJmM2VlM2ExNi1lMDkzLTRhNWQtODA1NC1lMjlkMTk5MzNlNjEifQ.IDdZ5zzvgt7XpCJZFSWu3nb3xgOfRjwfBQaSFouyDzo' \
+  -H 'content-length: 367' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Send effort condition night traditional fight away.","maxScore":70,"minScore":8,"description":"Carry seven out heart woman someone. Pass international system issue toward if. Television become tonight three girl draw.","estimatedTime":"1 weeks","previewFileId":"8a8a31e0-596b-458f-be76-43fb84f3c52e","createdByUserId":"f3ee3a16-e093-4a5d-8054-e29d19933e61"}'

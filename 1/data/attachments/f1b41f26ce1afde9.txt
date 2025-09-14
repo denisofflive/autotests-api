@@ -1,0 +1,25 @@
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:28 Make GET request to http://localhost:8000/api/v1/exercises?courseId=c3f75f8d-b6b2-4d33-9333-d5e01662edc9
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/exercises?courseId=c3f75f8d-b6b2-4d33-9333-d5e01662edc9
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:121 Check get exercises response
+INFO     BASE_ASSERTIONS:base.py:74 Check that length of "exercises" equals to 1
+INFO     EXERCISES_ASSERTIONS:exercises.py:21 Check exercise
+INFO     BASE_ASSERTIONS:base.py:38 Check that "exercise_id" equals to f36d0428-d6c8-41ef-83f8-1ba59a5274e0
+INFO     BASE_ASSERTIONS:base.py:38 Check that "title" equals to Front garden enter president technology good.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "course_id" equals to c3f75f8d-b6b2-4d33-9333-d5e01662edc9
+INFO     BASE_ASSERTIONS:base.py:38 Check that "max_score" equals to 90
+INFO     BASE_ASSERTIONS:base.py:38 Check that "min_score" equals to 16
+INFO     BASE_ASSERTIONS:base.py:38 Check that "order_index" equals to 30
+INFO     BASE_ASSERTIONS:base.py:38 Check that "description" equals to Economic age I because two. Report owner modern reduce experience chance peace. Arm center ground similar participant.
+INFO     BASE_ASSERTIONS:base.py:38 Check that "estimated_time" equals to 9 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:22 Validating JSON schema

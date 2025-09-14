@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE2OjQ1OjA2LjY5ODE4MyIsInVzZXJfaWQiOiJjYTg3YjI3Ni03YjhmLTRiNjMtOWMzYy0wZDYyZDU4ZTMyOWIifQ.jW4wKHzh2FJv4DL2ocpjkKnGeqijL0fjettk0xr2US8' \
+  -H 'content-length: 379' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Stop newspaper husband kitchen cost force get police.","maxScore":72,"minScore":21,"description":"Century threat take get.\nBoth last about writer fact cup. There left director against. Month skill available tree industry raise.","estimatedTime":"10 weeks","previewFileId":"564a8492-10e5-4b08-b6d3-62949ebb1117","createdByUserId":"ca87b276-7b8f-4b63-9c3c-0d62d58e329b"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE2OjQ1OjA0LjIyMTE3NSIsInVzZXJfaWQiOiIyY2E3MTZkMC0xYzYxLTQwOWEtYTY1NS0zYTdjM2YxYjQ4OWEifQ.qfp-qgRHQkAkZkLMHGUmshHODM52Li-B7yMUzJQPH5k' \
+  -H 'content-length: 392' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Sense too moment deal everybody than.","maxScore":62,"minScore":17,"description":"Action market family public to rest. Travel money already understand fight. Word room woman arrive knowledge if.\nPlay treat mother fund it course argue wonder.","estimatedTime":"4 weeks","previewFileId":"f8531719-4910-44dc-a575-391a9983b888","createdByUserId":"2ca716d0-1c61-409a-a655-3a7c3f1b489a"}'

@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/0a106afb-007e-4f71-9639-5c56340db4df' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE2OjQ1OjA0LjIyMTE3NSIsInVzZXJfaWQiOiIyY2E3MTZkMC0xYzYxLTQwOWEtYTY1NS0zYTdjM2YxYjQ4OWEifQ.qfp-qgRHQkAkZkLMHGUmshHODM52Li-B7yMUzJQPH5k' \
+  -H 'content-length: 232' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Test article together method.","maxScore":94,"minScore":11,"description":"Detail ago now serve himself hospital thought hear. Care candidate through strong. One also food current above find six.","estimatedTime":"2 weeks"}'

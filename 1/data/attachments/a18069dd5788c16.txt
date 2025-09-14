@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE2OjQ1OjA3LjI3ODA4MCIsInVzZXJfaWQiOiJjNDU4NDBjMC1iZDk5LTQ5ZGEtODA0MS0xNjg0MDFkZjBhY2UifQ.gzhyGGkwHUWjj710r6tCxZsQetlSN6hSAX_QJcClmok' \
+  -H 'content-length: 378' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Religious watch point trip.","maxScore":96,"minScore":18,"description":"Heart my mouth real dog forward. Pay can often last financial can fund. Plan traditional teacher phone whole Republican. Goal eight only way wall fish dark.","estimatedTime":"9 weeks","previewFileId":"932c62dc-3a4d-4032-bc44-8505ff22f282","createdByUserId":"c45840c0-bd99-49da-8041-168401df0ace"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE2OjQ1OjA1LjQ4NTIzMCIsInVzZXJfaWQiOiJjMWI2MzE3Yi1lYWQ2LTQ5ZmYtODY2My1iZTdlZjg3MTFhZGIifQ.5Kz5zNhn0ByR2gs-maMHVzUVVPXnujisVuSfW1oZ2Cw' \
+  -H 'content-length: 369' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Me phone control white.","maxScore":91,"minScore":16,"description":"Build begin traditional. Else risk movie peace become up wife decision.\nNo throw front. Night grow chair message. Agree morning then follow yeah fast.","estimatedTime":"4 weeks","previewFileId":"90af2e21-71ea-4531-bc5d-e3f472b5a970","createdByUserId":"c1b6317b-ead6-49ff-8663-be7ef8711adb"}'

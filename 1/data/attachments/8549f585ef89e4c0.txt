@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTE0VDE2OjQ1OjA2LjY5ODE4MyIsInVzZXJfaWQiOiJjYTg3YjI3Ni03YjhmLTRiNjMtOWMzYy0wZDYyZDU4ZTMyOWIifQ.jW4wKHzh2FJv4DL2ocpjkKnGeqijL0fjettk0xr2US8' \
+  -H 'content-length: 312' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Before skin manager catch down smile small.","courseId":"a95aa2fd-af28-4e28-b398-235c8565ed9c","maxScore":65,"minScore":12,"orderIndex":68,"description":"Whole star coach wonder significant them. Even around only issue majority owner. Other crime understand catch bit sound.","estimatedTime":"1 weeks"}'
