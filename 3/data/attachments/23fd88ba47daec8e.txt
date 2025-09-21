@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTIxVDEwOjQzOjU0LjM5MzgyNyIsInVzZXJfaWQiOiJkYjA1MzEzNC00YThhLTQyNTYtOGE4ZS1iMDNmOTQ2MGFlMDUifQ.ktgae3ulF-tuYZdhjs8MwV3I6RZbZZOJdqbt3BAq2lo' \
+  -H 'content-length: 421' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Feel see push forget north.","maxScore":55,"minScore":10,"description":"Field may keep series within. We life base total have improve teacher.\nStrategy star politics particularly certain on debate. Happy set spring year budget return. Quickly under short a carry I foot.","estimatedTime":"8 weeks","previewFileId":"f6a1d1d7-fe84-46fb-a832-dc60ba51b2de","createdByUserId":"db053134-4a8a-4256-8a8e-b03f9460ae05"}'

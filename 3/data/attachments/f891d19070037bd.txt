@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTIxVDEwOjQzOjUyLjU4OTM3NSIsInVzZXJfaWQiOiJlZTQ0YTA1MS02ZmRjLTRmZmMtYTFhMS1jZTM2ZjJkNjhhYWQifQ.pihbeOwILguzjCkXPP94HqGKzn7b_iiY-WiX7I9hglg' \
+  -H 'content-length: 385' \
+  -H 'content-type: application/json' \
+  -d '{"title":"International resource stay little across executive visit.","maxScore":68,"minScore":9,"description":"Wife despite visit rather history blood type detail. Professor yourself share parent black staff. Alone east its voice give discover.","estimatedTime":"2 weeks","previewFileId":"26e2c353-15d6-4b18-a791-69dcdf442fba","createdByUserId":"ee44a051-6fdc-4ffc-a1a1-ce36f2d68aad"}'

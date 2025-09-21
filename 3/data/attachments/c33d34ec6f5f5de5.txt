@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTIxVDEwOjQzOjUzLjE3Mjk5MSIsInVzZXJfaWQiOiIxMzYyMGVmMS0wMzBjLTQxMDctYmQxMy05ZTEwMDRjYmQxNWUifQ.XeCMGbtsJ1Grp9hmgBAQQUdnUiSWf6IiocySJUXOTHg' \
+  -H 'content-length: 412' \
+  -H 'content-type: application/json' \
+  -d '{"title":"After many cut as capital country.","maxScore":98,"minScore":16,"description":"Together factor sit. Town quite skin between value. Issue effect look.\nAddress onto Mrs or. Great themselves size us.\nNatural scientist edge reveal. Official night speech could way.","estimatedTime":"7 weeks","previewFileId":"98cdfcb7-614c-41eb-893f-e91b8c89ed65","createdByUserId":"13620ef1-030c-4107-bd13-9e1004cbd15e"}'

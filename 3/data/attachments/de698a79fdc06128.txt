@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTIxVDEwOjQzOjU1LjYzNjM4NyIsInVzZXJfaWQiOiI4NGJmMWVjYi0yNzgzLTQwODAtYTYxMC1iMzRiZDIyMjRmNzYifQ.KorK7-RqHaUFHQBkevoPv1ZAhQWkZxXlQkpOxawaYf0' \
+  -H 'content-length: 332' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Wait recent phone.","maxScore":89,"minScore":17,"description":"Size read show miss create. Glass shoulder happy why difficult. Yourself debate month. Recent fall study require range.","estimatedTime":"7 weeks","previewFileId":"4e4d6258-3bba-44b3-9534-6d7ef95bcb34","createdByUserId":"84bf1ecb-2783-4080-a610-b34bd2224f76"}'

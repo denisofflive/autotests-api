@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTIxVDEwOjQzOjUxLjY5NjQwNSIsInVzZXJfaWQiOiI1MWExZTcyMC1hMDk5LTQ2NGEtOWEyZC1kN2RkMTlkMGYzNDAifQ.6irs6U_-5wih83tHbELATDwDDS-eUS8vfVqTtvNPASI' \
+  -H 'content-length: 368' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Expert dream find find recent.","maxScore":84,"minScore":24,"description":"Building notice tax particularly may need wind. Media say clearly likely Democrat.\nMarriage pull performance your to perform. Own next every.","estimatedTime":"10 weeks","previewFileId":"deea2e13-6420-461f-a178-275645ccd2b6","createdByUserId":"51a1e720-a099-464a-9a2d-d7dd19d0f340"}'

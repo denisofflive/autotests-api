@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTIxVDEwOjQzOjU0Ljk3NjUyNiIsInVzZXJfaWQiOiJlZDczMGM4MS1iMjBhLTRjYTgtOTgwYy00YWM1MjQzYzhjYWMifQ.kx9mtWg9QLymZPB9d47_el_xhIp_hEaY-Pc5Huv92mg' \
+  -H 'content-length: 403' \
+  -H 'content-type: application/json' \
+  -d '{"title":"General tree threat charge threat news produce protect.","courseId":"bff43174-bd00-4342-8fec-cd8768798b4c","maxScore":100,"minScore":14,"orderIndex":90,"description":"Out not station kid. Play describe say. Card religious cell process industry that when article.\nMemory central grow enough draw. Like food study pretty religious. Budget actually very across never.","estimatedTime":"8 weeks"}'

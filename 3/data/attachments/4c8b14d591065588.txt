@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTIxVDEwOjQzOjUzLjc1ODA1NSIsInVzZXJfaWQiOiJlNzJkMzlkNS01NjExLTRmOGEtODc1ZC1jZGMxZThjOWViY2EifQ._Vz9A4tMOXs6tHQq2gwaD7r4teJtB5m-7rfbmyCinpk' \
+  -H 'content-length: 421' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Race particular window themselves generation behavior.","maxScore":67,"minScore":21,"description":"Girl question down something push eight. New affect want.\nMe student provide among car. Indeed season property future theory. Plan result trade begin significant when boy.","estimatedTime":"9 weeks","previewFileId":"17a89a4f-8519-4770-8119-23a8d53f0f35","createdByUserId":"e72d39d5-5611-4f8a-875d-cdc1e8c9ebca"}'
