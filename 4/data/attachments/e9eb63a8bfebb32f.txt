@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTIxVDEwOjUxOjE2LjAxMzQxNyIsInVzZXJfaWQiOiIwMjY5NWFmYi0zNTY3LTRhYjYtOTNjMC0wNjdiZjU3MWFhZTcifQ.3U-JEnQ4P5c4DIekcw9obAWlU5Uv9vLfUGUVyx_RpWk' \
+  -H 'content-length: 376' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Above foreign civil per vote.","maxScore":55,"minScore":23,"description":"Strategy against perform reduce find.\nLead language floor forward site safe. Number cover economy get white. Deep economy scene institution five blood.","estimatedTime":"8 weeks","previewFileId":"cfea7d68-a57a-4e46-a451-57d5f7a39b7b","createdByUserId":"02695afb-3567-4ab6-93c0-067bf571aae7"}'

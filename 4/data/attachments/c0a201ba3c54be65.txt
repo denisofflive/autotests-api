@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTIxVDEwOjUxOjEzLjk1MTA4NiIsInVzZXJfaWQiOiI4MGNlODRjMS1hYzJmLTRkOWQtOTc1Yi04ZWVjNWY5MmM1ZDkifQ.a260WPkS4t1YB7AirH4rLPFCBMjvot0PTyvuBfhnDhE' \
+  -H 'content-length: 332' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Change accept bad west.","maxScore":75,"minScore":1,"description":"Throw model old plant sit. Kid risk party never. Live factor budget guy total. Person short available member truth.","estimatedTime":"7 weeks","previewFileId":"d8306932-f5f6-45c9-8ba2-e5bbb2d92d43","createdByUserId":"80ce84c1-ac2f-4d9d-975b-8eec5f92c5d9"}'

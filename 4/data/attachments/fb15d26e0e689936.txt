@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTIxVDEwOjUxOjE4LjQ2NTg1MCIsInVzZXJfaWQiOiI2MTUwYmMzYi00ODg5LTQyODMtODY3My1hNWYwNjQ1NWQzNmQifQ.4dp8T7AjVCWe5YeRC_cz1Y8uFl0seiftigtHigOtuVE' \
+  -H 'content-length: 385' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Onto debate before break.","maxScore":65,"minScore":15,"description":"Base may if pattern prepare nothing. Rich stage source beyond.\nLot section account learn behind direction situation can. Although across consider fight coach catch.","estimatedTime":"2 weeks","previewFileId":"f341013e-93c5-4922-ab8b-4f5984fb1ff3","createdByUserId":"6150bc3b-4889-4283-8673-a5f06455d36d"}'

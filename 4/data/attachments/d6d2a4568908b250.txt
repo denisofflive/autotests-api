@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTIxVDEwOjUxOjE1LjQzMjg0MyIsInVzZXJfaWQiOiI5MmIzODY1Yy0zMWI2LTRmNDYtOGY3Yi04YWFiZGU2Zjc3NjMifQ.ag5TUtp9_g8wicPhbZDV64Xdh2kPqk58hHWSgpoQ3Gs' \
+  -H 'content-length: 368' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Part term put dinner.","maxScore":73,"minScore":3,"description":"Make which kitchen opportunity military challenge own always. Southern hold everything leader race peace. When thousand simple wrong attorney you speech.","estimatedTime":"2 weeks","previewFileId":"ce465969-1a81-43d7-95d4-4731c6a3c5fc","createdByUserId":"92b3865c-31b6-4f46-8f7b-8aabde6f7763"}'

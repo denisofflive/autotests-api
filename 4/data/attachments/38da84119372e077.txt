@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/278c59b7-cfbf-4ab3-8a80-fc9526f2d983' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTIxVDEwOjUxOjEzLjk1MTA4NiIsInVzZXJfaWQiOiI4MGNlODRjMS1hYzJmLTRkOWQtOTc1Yi04ZWVjNWY5MmM1ZDkifQ.a260WPkS4t1YB7AirH4rLPFCBMjvot0PTyvuBfhnDhE' \
+  -H 'content-length: 296' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Prove think south section then ahead.","maxScore":60,"minScore":29,"description":"Particular property today consider. Stay so ask how smile base rule. Radio laugh drive actually.\nStreet safe admit claim method available like. Truth on say college there son.","estimatedTime":"6 weeks"}'

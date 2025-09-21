@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTIxVDEwOjUxOjE2LjY0MTcxNCIsInVzZXJfaWQiOiJlNTVhY2QxYS0yYzE4LTQzMjItYTlhMS01OGYxZmI0NzQxMjEifQ.9rqPBUnr9gTtFjKPVAtMKw9zVj4keZ11vH7ZVDDve-E' \
+  -H 'content-length: 403' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Together worker six force seven parent.","maxScore":99,"minScore":13,"description":"Direction employee see affect really author. Partner decade never keep industry large also. Vote send this during mouth return. Exactly choose history available western.","estimatedTime":"1 weeks","previewFileId":"589fa87b-ae27-4b20-869c-7662fa84d54f","createdByUserId":"e55acd1a-2c18-4322-a9a1-58f1fb474121"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTIxVDEwOjUxOjE3Ljg4OTM0NiIsInVzZXJfaWQiOiJlYzJiOTViOC0yNjdjLTQ3NDItYjU0My04MGVmMjNjNzRkMzIifQ.VO0aaEsVJ1tm-aBQSh0ym30WY3ixx1hrxJdvrZYMShw' \
+  -H 'content-length: 327' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Thus significant choose large these wrong.","maxScore":91,"minScore":8,"description":"Child street since line serious. Despite conference teacher office necessary six all build.","estimatedTime":"1 weeks","previewFileId":"bbc7cbcb-cb25-4aea-991a-d34d258b52f4","createdByUserId":"ec2b95b8-267c-4742-b543-80ef23c74d32"}'
