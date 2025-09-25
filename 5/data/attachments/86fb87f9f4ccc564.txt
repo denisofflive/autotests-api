@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI1VDEwOjI3OjA2Ljk0MjA4NyIsInVzZXJfaWQiOiJlNWQ2ZjE1Ni1kNWQ5LTQxMmEtYTFjNy1iZWM2MDIyY2IxOTMifQ._gBa8URJmiukekaOrK-vjTNduJ7DCCI_RWpwoowJ2_I' \
+  -H 'content-length: 329' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Anything sign member list.","maxScore":75,"minScore":28,"description":"Rich brother question explain major early win body. Resource whose magazine agreement respond group provide.","estimatedTime":"3 weeks","previewFileId":"057e7d14-4227-4ffa-8900-4ad6e780bf38","createdByUserId":"e5d6f156-d5d9-412a-a1c7-bec6022cb193"}'

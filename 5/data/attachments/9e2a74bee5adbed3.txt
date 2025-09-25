@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI1VDEwOjI3OjExLjIwNjYwNyIsInVzZXJfaWQiOiIyM2IzNDY0Yy1lZDAyLTRiMjItOTUwOC1jMTk0OWZhNjJjZmEifQ.NaJlfMG3rIw6jItNaWtDMxvwq-3D26zLIVzgMY4WIOY' \
+  -H 'content-length: 365' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Method history say leader either college.","maxScore":87,"minScore":13,"description":"Several us heart professional here business turn. Section want majority Democrat end degree particular. Become above student few.","estimatedTime":"7 weeks","previewFileId":"4d3664a3-788c-45a2-a1e1-f45d43081fb3","createdByUserId":"23b3464c-ed02-4b22-9508-c1949fa62cfa"}'

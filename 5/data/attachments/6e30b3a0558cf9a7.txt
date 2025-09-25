@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI1VDEwOjI3OjA5LjM2NjQ2MSIsInVzZXJfaWQiOiJkZGUyZGY2ZC00M2YyLTRlNTgtYWZmMi0zNTk2ZmUzNzY4MTkifQ.X87EFQ5X17DqAKpnJC9BK8QDwBGNwHsblSTjJN2wlCU' \
+  -H 'content-length: 433' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Believe you air mission pressure before discover.","maxScore":79,"minScore":10,"description":"Find break apply voice race. Local world decision stop control.\nChallenge organization citizen participant degree two. Improve leave coach treatment amount. Believe good trouble continue.","estimatedTime":"10 weeks","previewFileId":"8d025e9a-aa99-4936-acf8-18240ab3572c","createdByUserId":"dde2df6d-43f2-4e58-aff2-3596fe376819"}'

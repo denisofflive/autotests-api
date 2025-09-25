@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/2dd07073-96f4-44aa-8774-1f0bdb4134c1' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI1VDEwOjI3OjA2Ljk0MjA4NyIsInVzZXJfaWQiOiJlNWQ2ZjE1Ni1kNWQ5LTQxMmEtYTFjNy1iZWM2MDIyY2IxOTMifQ._gBa8URJmiukekaOrK-vjTNduJ7DCCI_RWpwoowJ2_I' \
+  -H 'content-length: 298' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Seek interest fast per character exactly.","maxScore":89,"minScore":13,"description":"Provide president according spring positive month remain see. Yes billion human picture television.\nEnd back cell should understand something seven. Table affect without PM.","estimatedTime":"1 weeks"}'

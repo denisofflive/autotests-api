@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI1VDEwOjI3OjA4Ljc3NjQ0NSIsInVzZXJfaWQiOiI1OWQ2ZWZjZS0xYTA3LTQxOWYtYmU1YS01MGFmYWVjYjA5N2MifQ.taTqjeNqWPNy3KuaYeI1ZLkgOgF9-NeM7xh0CC9E0B8' \
+  -H 'content-length: 434' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Career beautiful scene tax use art right.","maxScore":61,"minScore":7,"description":"Raise system interview early tell.\nNature statement program thought benefit check small. Appear stop kid job himself would.\nMachine be commercial many draw plant grow. Kitchen study push me travel.","estimatedTime":"3 weeks","previewFileId":"04ac0df1-f29e-451d-87e4-d4483f67dd7a","createdByUserId":"59d6efce-1a07-419f-be5a-50afaecb097c"}'

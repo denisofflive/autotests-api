@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI1VDEwOjI3OjA5Ljk0NjA2NiIsInVzZXJfaWQiOiI5NjJhM2Y4NS1mYmE0LTRlNTUtYjFhZS1hMDA1MjBlOTU0ZmQifQ.mCsAt8yQ0PduGX64ZyqFwqNrqyt01YQPVnAAjaf0f48' \
+  -H 'content-length: 383' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Idea past meet course option.","maxScore":77,"minScore":26,"description":"Lawyer center social administration start soon. Offer treatment learn experience. Represent person officer beautiful.\nDetail serve former yard usually nation.","estimatedTime":"7 weeks","previewFileId":"94907bf8-1ec0-40db-8bfc-63f1c2cf8dcf","createdByUserId":"962a3f85-fba4-4e55-b1ae-a00520e954fd"}'

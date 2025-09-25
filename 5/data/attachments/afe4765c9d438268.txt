@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI1VDEwOjI3OjA3LjUzNjQ2NiIsInVzZXJfaWQiOiI2ODhkMmI3Mi02Nzk4LTQ1ZDgtODJiNi1lZDVjNzE4OTcxNDEifQ.XWETiJdhLGthp6inW2T-oVKBoZeTdc59DvbQlNUNJhY' \
+  -H 'content-length: 417' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Claim modern that your.","maxScore":96,"minScore":27,"description":"Star chair hot single upon production. Recent either hotel training road.\nFar only hotel know very week. Computer wide all society something news compare. Discover resource agency away or according.","estimatedTime":"8 weeks","previewFileId":"7a9edda0-6eda-45ba-b03e-867f4026993a","createdByUserId":"688d2b72-6798-45d8-82b6-ed5c71897141"}'

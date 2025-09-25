@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI1VDEwOjI3OjA4Ljc3NjQ0NSIsInVzZXJfaWQiOiI1OWQ2ZWZjZS0xYTA3LTQxOWYtYmU1YS01MGFmYWVjYjA5N2MifQ.taTqjeNqWPNy3KuaYeI1ZLkgOgF9-NeM7xh0CC9E0B8' \
+  -H 'content-length: 390' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Structure out factor brother answer opportunity assume.","courseId":"67aa862f-df01-40b8-b8b6-43f9addadf89","maxScore":65,"minScore":22,"orderIndex":3,"description":"Resource three hit citizen western. Poor crime risk they piece. Church anything read without ten be fear.\nImportant carry citizen rich financial partner argue. Which car situation after.","estimatedTime":"8 weeks"}'

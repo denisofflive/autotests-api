@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTI1VDEwOjI3OjA4LjE4MTM4MCIsInVzZXJfaWQiOiJlYTU5YmI3Mi0xOTIyLTRmN2UtOGFjNi01MTMxZGViNTY0MDUifQ.Yp5QsT4ZwsYHONJr_UIp74CciiNFcS7jp_5KkIXrrYw' \
+  -H 'content-length: 296' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Happen purpose least answer six force market lawyer.","maxScore":75,"minScore":25,"description":"Water score organization before might throughout.","estimatedTime":"7 weeks","previewFileId":"9e773d2b-49c7-4cde-8fe3-a5d52e61b4c2","createdByUserId":"ea59bb72-1922-4f7e-8ac6-5131deb56405"}'
